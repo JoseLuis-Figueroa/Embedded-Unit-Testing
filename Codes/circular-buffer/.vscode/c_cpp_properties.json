@@ -10,6 +10,7 @@
             "includePath": [
                 "C:/Users/josefi/OneDrive - ASSA ABLOY Group/Documents/4.Firmware/Personal/Projects/Unit-Testing/Codes/circular-buffer/include",
                 "C:/Users/josefi/OneDrive - ASSA ABLOY Group/Documents/4.Firmware/Personal/Projects/Unit-Testing/Codes/circular-buffer/src",
+                "C:/Users/josefi/OneDrive - ASSA ABLOY Group/Documents/4.Firmware/Personal/Projects/Unit-Testing/Codes/circular-buffer/.pio/libdeps/native/Unity/src",
                 ""
             ],
             "browse": {
@@ -17,6 +18,7 @@
                 "path": [
                     "C:/Users/josefi/OneDrive - ASSA ABLOY Group/Documents/4.Firmware/Personal/Projects/Unit-Testing/Codes/circular-buffer/include",
                     "C:/Users/josefi/OneDrive - ASSA ABLOY Group/Documents/4.Firmware/Personal/Projects/Unit-Testing/Codes/circular-buffer/src",
+                    "C:/Users/josefi/OneDrive - ASSA ABLOY Group/Documents/4.Firmware/Personal/Projects/Unit-Testing/Codes/circular-buffer/.pio/libdeps/native/Unity/src",
                     ""
                 ]
             },
