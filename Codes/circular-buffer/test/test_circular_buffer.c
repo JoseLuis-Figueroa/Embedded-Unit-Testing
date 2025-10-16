@@ -33,6 +33,18 @@ void test_circular_buffer_not_empty_after_new_element_added(void)
     TEST_ASSERT_FALSE(cbuffer_empty(&buff));
 }
 
+/*Test case 3*/
+void test_circular_buffer_read_element_successful(void)
+{
+    cbuffer_t buff;
+    cbuffer_init(&buff);
+
+    uint8_t value = 55;
+    cbuffer_add(&buff, value);
+
+    TEST_ASSERT_EQUAL(value, cbuffer_get(&buff));
+}
+
 /*****************************************************************************
 * Main
 *****************************************************************************/

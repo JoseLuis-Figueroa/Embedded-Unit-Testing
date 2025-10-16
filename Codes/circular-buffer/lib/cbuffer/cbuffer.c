@@ -23,13 +23,19 @@ void cbuffer_add(cbuffer_t* buf, uint8_t item)
     buf->head = (buf->head + 1) & BUFFER_MASK;
 }
 
-uint8_t cbuffer_get(cbuffer_t* buf) {
-    return 0;
+uint8_t cbuffer_get(cbuffer_t* buf) 
+{
+    if(cbuffer_empty(buf))
+    {
+        // Buffer is empty, return 0 or handle underflow as needed
+        return 0;
+    }
+    return buf->buffer[buf->tail++];
 }
 
 
 bool cbuffer_full(cbuffer_t* buf) {
-    return false;
+    return (buf->head - buf->tail) & BUFFER_MASK == BUFFER_MASK;
 }
 
 
