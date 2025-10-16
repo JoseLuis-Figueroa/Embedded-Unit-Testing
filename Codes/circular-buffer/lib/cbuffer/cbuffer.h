@@ -8,7 +8,6 @@
     If the buffer is of a power-of-2 size,
     then a much quicker bitwise-AND instruction can be used instead.
 */
-
 #ifndef BUFFER_SIZE
 #define BUFFER_SIZE (32)
 #endif
