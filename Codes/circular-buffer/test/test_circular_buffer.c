@@ -24,6 +24,14 @@ void test_circular_buffer_empty_after_init(void)
     TEST_ASSERT_TRUE(cbuffer_empty(&buff));
 }
 
+/* Test case 2*/
+void test_circular_buffer_not_empty_after_new_element_added(void) 
+{
+    cbuffer_t buff;
+    cbuffer_init(&buff);
+    cbuffer_add(&buff, 42);
+    TEST_ASSERT_FALSE(cbuffer_empty(&buff));
+}
 
 /*****************************************************************************
 * Main
@@ -33,6 +41,7 @@ int main( int argc, char **argv) {
 
     /* Run Test functions */
     RUN_TEST(test_circular_buffer_empty_after_init);
+    RUN_TEST(test_circular_buffer_not_empty_after_new_element_added);
 
     UNITY_END();
 }
