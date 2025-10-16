@@ -33,10 +33,11 @@ uint8_t cbuffer_get(cbuffer_t* buf)
     return buf->buffer[buf->tail++];
 }
 
-
 bool cbuffer_full(cbuffer_t* buf) {
     return (buf->head - buf->tail) & BUFFER_MASK == BUFFER_MASK;
 }
 
-
-void cbuffer_clear(cbuffer_t* buf) {}
+void cbuffer_clear(cbuffer_t* buf) 
+{
+    buf->head = buf->tail;
+}
