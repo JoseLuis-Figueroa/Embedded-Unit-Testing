@@ -52,7 +52,9 @@ Each project follows the **PlatformIO testing framework** and integrates seamles
   - Circular Buffer – Host (native)  
   - STM32 Unit Test – Nucleo-F401RE (ARM Cortex-M4)  
 - **Toolchain:** GNU ARM Embedded / GCC  
-- **Debugging:** PlatformIO Test Console, Serial Monitor  
+- **Debugging:** PlatformIO Test Console, Serial Monitor
+
+**[Back to top](#table-of-contents)**
 
 ---
 
@@ -64,6 +66,8 @@ Current Version: `v1.0`
 Tested On:  
 - 🖥️ Native (Windows/Linux)  
 - ⚙️ STM32 Nucleo-F401RE  
+
+**[Back to top](#table-of-contents)**
 
 ---
 
@@ -104,8 +108,8 @@ pio run
 - **Build specific environments in CLI:** run the following command to build a specific environment:
 
 ```
-pio run -e circular-buffer
-pio run -e stm32f4-unit-testing
+pio run -e native
+pio run -e nucleo_f401re
 ```
 
 ### Running Tests
@@ -121,9 +125,12 @@ pio test
 ```
 - **Test specific environments in CLI:** run the following command to build a specific environment:
 ```
-pio test -e circular-buffer
-pio test -e stm32f4-unit-testing
+pio test -e native
+pio test -e nucleo_f401re
 ```
+
+**[Back to top](#table-of-contents)**
+
 ---
 ## Usage
 
@@ -322,6 +329,8 @@ nucleo_f401re  *       PASSED    00:00:10.484
 
 Both examples demonstrate a **scalable approach** to testing embedded software, where logic is verified in isolation before hardware validation, ensuring **reliability** and **maintainability**.
 
+**[Back to top](#table-of-contents)**
+
 ---
 ## Release Process
 
@@ -351,8 +360,6 @@ Latest release: **v1.0**
 Contributions are welcome!  
 Please refer to [CONTRIBUTING.md](Documentation/CONTRIBUTING.md) for details.
 
-**[Back to top](#table-of-contents)**
-
 ---
 
 ## Further Reading
@@ -377,3 +384,5 @@ Licensed under the MIT License – see [LICENSE.md](LICENSE) for details.
 ## Acknowledgments
 
 - [STM32F4 Reference Manual](https://www.st.com/resource/en/reference_manual/dm00031020.pdf)
+
+**[Back to top](#table-of-contents)**
